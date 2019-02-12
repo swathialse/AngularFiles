@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="phoneCatApp">
+  <head>
+    <link rel="stylesheet" href="node_modules\css\phone.css">
+    <meta charset="utf-8">
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="angular-support/phonecat.js"></script>
+    <title> phone catalogue</title>
+  </head>
+  <body ng-controller="phoneListCtrlr">
+    <h1>Phone Reviews</h1>
+    <ul>
+      <li ng-repeat="ph in phones">
+        <span class="phone_name"> {{ph.name}}</span>
+        <p> {{ph.snippet}}</p>
+      </li>
+    </ul>
+  </body>
+</html>
